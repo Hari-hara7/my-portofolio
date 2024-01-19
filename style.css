@@ -1,0 +1,470 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a universal font and set background color */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #05db3a;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    animation: gradientMovement 15s infinite linear alternate;
+}
+
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #00e535;
+    color: #fff;
+}
+
+/* About Me Section Styles */
+.about {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    box-shadow: 0px 5px 20px rgba(233, 226, 226, 0.1);
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ffeaea;
+}
+
+.about p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #fffcfc;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Resume Section Styles */
+.resume {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    box-shadow: 0px 5px 20px rgba(255, 244, 244, 0.1);
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+/* Skills Section Styles */
+.skills {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    box-shadow: 0px 5px 20px rgba(254, 247, 247, 0.1);
+    padding: 80px 0;
+}
+
+.portfolio h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #fffcfc;
+}
+
+.project-card {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(255, 252, 252, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card h3 {
+    padding: 20px;
+    font-size: 1.5em;
+    color: #f4e4e4;
+}
+
+.project-card p {
+    padding: 0 20px 20px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* Blog Section Styles */
+.blog {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    box-shadow: 0px 5px 20px rgba(255, 250, 250, 0.1);
+    padding: 80px 0;
+}
+
+.blog h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #f3eeee;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(230, 227, 227, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog-post h3 {
+    padding: 20px;
+    font-size: 1.5em;
+    color: #fbf4f4;
+}
+
+.blog-post p {
+    padding: 0 20px 20px 20px;
+    font-size: 1.2em;
+    color: #f4e9e9;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    color: #ff4081;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #e9014e;
+    color: #fff;
+}
+
+/* Footer Section Styles */
+footer {
+    background-image: linear-gradient(to right, #000000, #000b88);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 0;
+    }
+
+    nav h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .about,
+    .resume,
+    .skills,
+    .portfolio,
+    .blog,
+    .contact {
+        padding: 60px 0;
+    }
+
+    .about h2,
+    .resume h2,
+    .skills h2,
+    .portfolio h2,
+    .blog h2,
+    .contact h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    form label {
+        font-size: 1.2em;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    form button {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+/* Add this CSS in the head of your HTML file or in a separate CSS file */
+
+.resume-download-box {
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.resume-download-box h3 {
+    color: #000000;
+}
+
+.resume-download-box p {
+    color: #ff0000;
+}
+
+.resume-download-box a {
+    display: inline-block;
+    background-color: #c10000;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download-box a:hover {
+    background-color: #0056b3;
+}
+li {
+    color: #fffafa; /* Text color */
+    font-size: 16px; /* Font size */
+    margin-bottom: 8px; /* Bottom margin between list items */
+}
+
+/* Apply specific styles to list items within a portfolio */
+.portfolio li {
+    font-weight: bold; /* Bold font for portfolio list items */
+    color: #ff0000; /* Blue color for portfolio list items */
+}
+
+/* Apply specific styles to list items within a skills section */
+.skills li {
+    list-style-type: none; /* Remove bullet points for skills list items */
+    font-style: italic; /* Italic font for skills list items */
+    color: #888; /* Gray color for skills list items */
+}
+
+/* Apply specific styles to list items within other sections if needed */
+/* .section-class li { ... } */
+/* Apply decorative styles to h2 elements */
+/* Apply handwriting font to all paragraphs */
+p {
+    font-family: 'YourHandwritingFont', cursive; /* Replace 'YourHandwritingFont' with the actual font name or URL */
+    font-size: 18px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Example using Google Fonts for handwriting font */
+/* Add this link in the head of your HTML document */
+/* <link href="https://fonts.googleapis.com/css2?family=Your+Handwriting+Font&display=swap" rel="stylesheet"> */
+/* styles.css */
+
+.animated-text {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
